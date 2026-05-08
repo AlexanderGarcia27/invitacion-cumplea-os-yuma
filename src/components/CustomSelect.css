@@ -1,0 +1,244 @@
+.custom-select-container {
+  position: relative;
+  width: 100%;
+  height: 42px;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+/* Ensure the container has high z-index when open to stay above other elements */
+.custom-select-container.is-open {
+  z-index: 100;
+}
+
+.custom-select-btn {
+  position: relative;
+  height: 42px;
+  padding: 0 14px;
+  background-color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid #e2eded;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.custom-select-checkbox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.custom-selected-value {
+  font-size: 14px;
+  line-height: 1;
+  margin-right: 26px;
+  color: #2d3667;
+}
+
+.custom-chevrons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.custom-chevrons svg {
+  display: block;
+  color: #d1dede;
+  transition: color 0.3s ease;
+}
+
+.custom-select-checkbox:checked + .custom-select-btn .custom-chevrons svg {
+  color: #2d3667;
+}
+
+.custom-options {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  border: 1px solid #e2eded;
+  padding: 4px 0;
+  pointer-events: none;
+}
+
+.custom-options::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-options::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-options::-webkit-scrollbar-thumb {
+  background-color: #e2eded;
+  border-radius: 20px;
+}
+
+/* Logic for opening upwards */
+.custom-select-container.open-up .custom-options {
+  top: auto;
+  bottom: 48px;
+  transform: translateY(10px);
+  box-shadow: 0 -10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-select-checkbox:checked ~ .custom-options {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.custom-option {
+  position: relative;
+  line-height: 1;
+  transition: 0.3s ease all;
+  z-index: 2;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.custom-option-icon {
+  position: absolute;
+  left: 14px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 3;
+  color: #2d3667;
+  opacity: 0;
+  transform: translateY(0);
+}
+
+.custom-select-checkbox:checked ~ .custom-options .custom-option-icon {
+  opacity: 1;
+}
+
+.custom-option-label {
+  width: 100%;
+  padding: 12px 14px 12px 40px;
+  font-size: 14px;
+  color: #2d3667;
+  transition: 0.3s ease all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 2;
+}
+
+.custom-option-radio {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.custom-option-radio.top {
+  top: 0;
+}
+
+.custom-option-radio.bottom {
+  bottom: 0;
+}
+
+.custom-option-radio:hover {
+  height: 100%;
+  z-index: 5;
+}
+
+/* Hover animations for icons */
+.custom-option-radio.bottom:hover ~ .custom-option-icon {
+  animation: moveup 0.3s ease forwards;
+}
+
+.custom-option-radio.top:hover ~ .custom-option-icon {
+  animation: movedown 0.3s ease forwards;
+}
+
+@keyframes moveup {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes movedown {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.custom-option-radio:checked ~ .custom-option-label {
+  color: #fff;
+}
+
+.custom-option-radio:checked ~ .custom-option-icon {
+  color: #fff;
+  opacity: 1;
+  animation: none;
+}
+
+.custom-option-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.custom-option-radio:checked ~ .custom-option-bg {
+  background-color: var(--select-accent-color, #2d3667);
+}
+
+.custom-option:hover .custom-option-label {
+  color: #fff;
+}
+
+.custom-option:hover .custom-option-icon {
+  color: #fff;
+}
+
+.custom-option:hover .custom-option-bg {
+  background-color: var(--select-accent-color, #2d3667);
+}

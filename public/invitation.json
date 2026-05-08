@@ -1,0 +1,166 @@
+{
+    "version": "1.0.0",
+    "locale": "es-MX",
+    "theme": {
+        "cover": {
+            "headline": "Nos Casamos",
+            "subheadline": "6 de Junio 2026 • San Marcos, Hidalgo",
+            "images": []
+        },
+        "music": {
+            "isEnabled": true,
+            "trackTitle": "Rompecabezas - Mijares",
+            "audioUrl": "/audio/rompecabezas.mp3"
+        }
+    },
+    "couple": {
+        "brideName": "Sofía",
+        "groomName": "Alan"
+    },
+    "timing": {
+        "eventDateTime": "2026-06-06T13:00:00",
+        "rsvpDeadline": "2026-05-15",
+        "countdown": {
+            "isEnabled": true
+        }
+    },
+    "hosts": [
+        {
+            "category": "Velación",
+            "godfatherName": "Nombre del Padrino",
+            "godmotherName": "Nombre de la Madrina"
+        },
+        {
+            "category": "Anillos",
+            "godfatherName": "Nombre del Padrino",
+            "godmotherName": "Nombre de la Madrina"
+        },
+        {
+            "category": "Lazo",
+            "godfatherName": "Nombre del Padrino",
+            "godmotherName": "Nombre de la Madrina"
+        },
+        {
+            "category": "Arras",
+            "godfatherName": "Nombre del Padrino",
+            "godmotherName": "Nombre de la Madrina"
+        },
+        {
+            "category": "Biblia y Rosario",
+            "godfatherName": "Nombre del Padrino",
+            "godmotherName": "Nombre de la Madrina"
+        }
+    ],
+    "locations": [
+        {
+            "key": "ceremony",
+            "time": "13:00",
+            "title": "Ceremonia Religiosa",
+            "venueName": "Parroquia de San Marcos",
+            "address": "San Marcos, Hidalgo",
+            "description": "Acompáñanos a recibir la bendición en esta hermosa parroquia histórica.",
+            "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.5348833609087!2d-99.3371701!3d20.028026600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d22da449ff07f7%3A0xe5b63944c263af!2sParroquia%20de%20San%20Marcos!5e0!3m2!1ses-419!2smx!4v1770160592698!5m2!1ses-419!2smx",
+            "mapUrl": "https://share.google/TpXsxtwtD0Cv52QxU",
+            "latitude": 20.0280266,
+            "longitude": -99.3371701,
+            "calendarUrl": ""
+        },
+        {
+            "key": "reception",
+            "time": "15:00",
+            "title": "Recepción",
+            "venueName": "MALAIKA Jardín",
+            "address": "San Marcos, Hidalgo",
+            "description": "Celebremos juntos con comida, música y mucha alegría.",
+            "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.8739861712734!2d-99.32566922441801!3d20.05572028136118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d22d1e1faa9e13%3A0xe59f5f6dc2a3e264!2sMALAIKA%20Jard%C3%ADn%20%26%20Centro%20de%20Eventos!5e0!3m2!1sen!2smx!4v1770160531015!5m2!1sen!2smx",
+            "mapUrl": "https://share.google/rhDHUzUvERSqNV1vn",
+            "latitude": 20.0557203,
+            "longitude": -99.3230943,
+            "calendarUrl": ""
+        }
+    ],
+    "timeline": [
+        {
+            "time": "14:30 HRS",
+            "title": "CÓCTEL DE BIENVENIDA",
+            "description": "¡TENEMOS PREPARADO UN CÓCTEL PARA TI, LLEGA TEMPRANO PARA DISFRUTARLO!",
+            "icon": "cocktail"
+        },
+        {
+            "time": "15:30 HRS",
+            "title": "ENTRADA NOVIOS",
+            "description": "",
+            "icon": "heart"
+        },
+        {
+            "time": "16:00 HRS",
+            "title": "COMIDA",
+            "description": "",
+            "icon": "food"
+        },
+        {
+            "time": "17:30 HRS",
+            "title": "¡¡A BAILAR!!",
+            "description": "LOS QUEREMOS VER TODA LA NOCHE EN LA PISTA",
+            "icon": "music"
+        },
+        {
+            "time": "22:00 HRS",
+            "title": "CENA",
+            "description": "",
+            "icon": "cake"
+        },
+        {
+            "time": "00:00 HRS",
+            "title": "FIN",
+            "description": "",
+            "icon": "moon"
+        }
+    ],
+    "dressCode": {
+        "type": "Formal",
+        "imageUrl": "/dress/dresscode.png",
+        "women": {
+            "description": "Vestido largo o midi formal.",
+            "restrictions": "Cualquier color excepto blanco, beige y cualquier tono dentro de la gama verde.",
+            "pinterestUrl": "https://mx.pinterest.com/search/pins/?q=vestido%20largo%20formal%20invitada%20boda%20rosa%20azul%20vino"
+        },
+        "men": {
+            "description": "Traje o conjunto formal.",
+            "restrictions": "Cualquier color excepto negro y blanco",
+            "pinterestUrl": "https://www.pinterest.mx/search/pins/?q=traje%20azul%20vino%20gris%20invitado%20boda"
+        }
+    },
+    "gallery": [
+        "/slider/DSC06117.jpg",
+        "/slider/DSC06144.jpg",
+        "/slider/DSC06148.jpg",
+        "/slider/DSC06152.jpg",
+        "/slider/DSC06169.jpg",
+        "/slider/DSC06198.jpg",
+        "/slider/DSC06214.jpg",
+        "/slider/IMG_5553.jpg",
+        "/slider/IMG_5554.jpg",
+        "/slider/IMG_5566.jpg",
+        "/slider/IMG_5574.jpg",
+        "/slider/IMG_5579.jpg",
+        "/slider/IMG_5580.jpg"
+    ],
+    "notes": {
+        "noKids": {
+            "isEnabled": true,
+            "title": "Nota Importante",
+            "subtitle": "Celebración solo para adultos",
+            "message": "Amamos a los pequeños y sabemos lo importantes que son, pero queremos verte disfrutar y divertirte junto a nosotros, por lo cual hemos decidido que sea una celebración solo para adultos, esperamos contar con tu presencia y gracias por tu comprensión"
+        },
+        "additionalNote": ""
+    },
+    "footer": {
+        "closingLine": "Te esperamos"
+    },
+    "links": {
+        "rsvpUrl": "",
+        "contactUrl": "",
+        "giftRegistryUrl": ""
+    }
+}

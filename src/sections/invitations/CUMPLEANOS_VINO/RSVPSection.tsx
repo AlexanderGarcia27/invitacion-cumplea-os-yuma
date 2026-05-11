@@ -16,7 +16,7 @@ export default function RSVPSection() {
   const title = 'Asistencia';
   const subtitle = 'Confirma tu presencia';
   const description = 'Me encantaría que me acompañaras en este día tan especial. Por favor, confirma tu asistencia haciendo clic en el botón de abajo.';
-  const phoneNumber = '527711138128'; // Replace with the actual WhatsApp number
+  const phoneNumber = '525569022004'; // Replace with the actual WhatsApp number
   const message = 'Hola si voy a ir a tu fiesta 🎉';
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

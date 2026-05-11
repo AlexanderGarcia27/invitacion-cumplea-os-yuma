@@ -18,8 +18,8 @@ export default function EventLocationSection() {
   const events = [
     {
       title: 'Fiesta',
-      venueName: 'Ven a mi casa a celebrar',
-      description: 'Celebraremos todos juntos con música, comida y mucha diversión.',
+      venueName: 'Salón de Eventos',
+      description: 'Te espero para celebrar juntos en una tarde llena de alegría, música y sorpresas.',
       time: '14:30',
       mapUrl: `https://www.google.com/maps/place/20%C2%B002'58.6%22N+98%C2%B048'33.4%22W/@20.049614,-98.809271,779m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d20.049614!4d-98.809271?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D`,
       embedUrl: 'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3391.762696122956!2d-98.809271!3d20.049614000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDAyJzU4LjYiTiA5OMKwNDgnMzMuNCJX!5e1!3m2!1ses!2smx!4v1778200192929!5m2!1ses!2smx',

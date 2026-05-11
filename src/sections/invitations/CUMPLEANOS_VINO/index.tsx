@@ -10,6 +10,7 @@ import CountdownSection from './CountdownSection';
 import SliderSection from './SliderSection';
 import EventLocationSection from './EventLocationSection';
 import RSVPSection from './RSVPSection';
+import GiftsSection from './GiftsSection';
 import SectionTransition from '@/src/components/SectionTransition';
 import FlowerTransition from '@/src/components/FlowerTransition';
 
@@ -74,6 +75,8 @@ export default function CumpleanosVinoDesign() {
       </div>
 
       <SliderSection />
+
+      <GiftsSection />
 
       <SectionTransition variant="botanical" botanical="white-rose" />
       <RSVPSection />
